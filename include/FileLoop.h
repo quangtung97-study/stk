@@ -74,7 +74,7 @@ class FileLoop : protected FileWvIn
   void normalize( StkFloat peak ) { FileWvIn::normalize( peak ); };
 
   //! Return the file size in sample frames.
-  unsigned long getSize( void ) const { return data_.frames(); };
+  unsigned long getSize( void ) const { return fileSize_; };
 
   //! Return the input file sample rate in Hz (not the data read rate).
   /*!
